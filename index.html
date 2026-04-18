@@ -596,14 +596,18 @@ body{
   font-family:var(--f-serif);font-size:15px;line-height:2;color:var(--cream-warm);
   margin-bottom:14px;max-width:38em;
 }
-/* airinaの一言バイオ：ちょっとカジュアルに */
+/* アーティストバイオ：公式プロフィール風、Klee One で少し人間味を残す */
 .artist__bio{
-  font-family:"Klee One","Yusei Magic","Shippori Mincho",var(--f-serif) !important;
-  font-size:17px !important;line-height:2.1 !important;
-  color:var(--cream) !important;
-  margin:8px 0 28px !important;
+  font-family:"Klee One","Yusei Magic","Shippori Mincho",var(--f-serif);
+  font-size:15px;line-height:2;
+  color:var(--cream);
+  margin:8px 0 28px;
   letter-spacing:.02em;
+  max-width:38em;
 }
+.artist__bio p{margin:0 0 12px}
+.artist__bio p:last-child{margin-bottom:0}
+.artist__bio b{color:var(--amber-soft);font-weight:700;letter-spacing:.05em}
 
 /* SNS/Streamingアイコン */
 .streams{margin-top:42px}
@@ -923,9 +927,14 @@ body{
       <div class="artist__info" data-reveal>
         <div class="kanji">Rapper / DJ</div>
         <h3><em>Kefu</em></h3>
-        <p class="artist__bio">
-          Rapper / DJ 🎤🎧
-        </p>
+        <div class="artist__bio">
+          <p><b>Kefu</b></p>
+          <p>2003年、東京都中野区生まれのラッパー / DJ。</p>
+          <p>
+            2022年から活動を開始し、1st EP「Slide」をリリースするなど、
+            UKガラージなどの要素を取り入れたサウンドで活動を広げている。
+          </p>
+        </div>
 
         <div class="streams">
           <div class="streams__label">Listen & Follow</div>
